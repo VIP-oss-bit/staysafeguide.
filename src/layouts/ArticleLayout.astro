@@ -1,0 +1,76 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import { SITE, CLUSTERS } from '../consts';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  cluster: string;
+  author?: string;
+}
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  cluster,
+  author = SITE.author,
+} = Astro.props;
+
+const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const clusterMeta = CLUSTERS.find((c) => c.name === cluster);
+const fmt = (d: Date) =>
+  new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+const articleLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: title,
+  description,
+  datePublished: new Date(pubDate).toISOString(),
+  dateModified: new Date(updatedDate ?? pubDate).toISOString(),
+  author: { '@type': 'Person', name: author },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
+  mainEntityOfPage: canonical,
+};
+const crumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url + '/' },
+    clusterMeta && {
+      '@type': 'ListItem',
+      position: 2,
+      name: clusterMeta.name,
+      item: `${SITE.url}/topics/${clusterMeta.slug}/`,
+    },
+    { '@type': 'ListItem', position: 3, name: title, item: canonical },
+  ].filter(Boolean),
+};
+---
+<BaseLayout title={title} description={description} ogType="article">
+  <article class="prose">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/">Home</a> ›
+      {clusterMeta && (
+        <Fragment><a href={`/topics/${clusterMeta.slug}/`}>{clusterMeta.name}</a> › </Fragment>
+      )}
+      <span>{title}</span>
+    </nav>
+    {clusterMeta && <span class="badge">{clusterMeta.name}</span>}
+    <h1>{title}</h1>
+    <p class="post-meta">
+      By {author} · Published {fmt(pubDate)}{updatedDate ? ` · Updated ${fmt(updatedDate)}` : ''}
+    </p>
+    <div class="disclosure">
+      Some links on this page may be affiliate links. If you buy through them we may
+      earn a small commission, at no extra cost to you. We only recommend tools we
+      believe are genuinely worth it. <a href="/affiliate-disclosure/">Learn more</a>.
+    </div>
+    <slot />
+  </article>
+  <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
+  <script type="application/ld+json" set:html={JSON.stringify(crumbLd)} />
+</BaseLayout>
