@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CLUSTERS } from '../consts';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('articles', ({ data }) => !data.draft)).sort(
+  (a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+);
+const fmt = (d: Date) =>
+  new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<BaseLayout>
+  <section class="hero">
+    <h1>Stay safe online, without the jargon</h1>
+    <p class="lead">
+      Straightforward guides to spotting scams, choosing the right tools and locking
+      down your accounts. Written for normal people, not techies.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Where do you want to start?</h2>
+    <div class="grid">
+      {CLUSTERS.map((c) => (
+        <a class="card" href={`/topics/${c.slug}/`}>
+          <h3>{c.name}</h3>
+          <p>{c.blurb}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head"><h2>Latest guides</h2></div>
+    {posts.length === 0 ? (
+      <p class="muted">New guides are on the way.</p>
+    ) : (
+      <ul class="post-list">
+        {posts.slice(0, 8).map((post) => (
+          <li>
+            <a class="post-title" href={`/articles/${post.slug}/`}>{post.data.title}</a>
+            <p class="post-meta">{post.data.cluster} · {fmt(post.data.pubDate)}</p>
+            <p class="muted">{post.data.description}</p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+</BaseLayout>

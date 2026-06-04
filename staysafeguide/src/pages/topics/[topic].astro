@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { CLUSTERS } from '../../consts';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('articles', ({ data }) => !data.draft);
+  return CLUSTERS.map((c) => ({
+    params: { topic: c.slug },
+    props: {
+      cluster: c,
+      posts: entries
+        .filter((e) => e.data.cluster === c.name)
+        .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()),
+    },
+  }));
+}
+
+const { cluster, posts } = Astro.props;
+const fmt = (d: Date) =>
+  new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<BaseLayout title={cluster.name} description={cluster.blurb} noindex={posts.length === 0}>
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> › <span>{cluster.name}</span></nav>
+  <section class="hero">
+    <h1>{cluster.name}</h1>
+    <p class="lead">{cluster.blurb}</p>
+  </section>
+  <section class="section">
+    {posts.length === 0 ? (
+      <p class="muted">Guides for this topic are coming soon. Check back shortly.</p>
+    ) : (
+      <ul class="post-list">
+        {posts.map((post) => (
+          <li>
+            <a class="post-title" href={`/articles/${post.slug}/`}>{post.data.title}</a>
+            <p class="post-meta">{fmt(post.data.pubDate)}</p>
+            <p class="muted">{post.data.description}</p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </section>
+</BaseLayout>
