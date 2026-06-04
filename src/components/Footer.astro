@@ -5,18 +5,18 @@ const year = new Date().getFullYear();
 <footer class="site-footer">
   <div class="wrap">
     <div>
-      <h4>{SITE.name}</h4>
+      <h2>{SITE.name}</h2>
       <p class="footer-note" style="max-width: 34ch;">
         Plain-English help to stay safe online. We may earn a commission from
         some links, at no extra cost to you.
       </p>
     </div>
     <div>
-      <h4>Topics</h4>
+      <h2>Topics</h2>
       {CLUSTERS.map((c) => <a href={`/topics/${c.slug}/`}>{c.name}</a>)}
     </div>
     <div>
-      <h4>Site</h4>
+      <h2>Site</h2>
       <a href="/about/">About</a>
       <a href="/contact/">Contact</a>
       <a href="/affiliate-disclosure/">Affiliate disclosure</a>
