@@ -9,7 +9,15 @@ const isActive = (href: string) => href !== '/' && (path === href || path.starts
       <img src="/favicon.svg" alt="" width="30" height="30" />
       <span>{SITE.name}</span>
     </a>
-    <nav class="nav" aria-label="Primary navigation">
+    <button
+      class="nav-toggle"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="primary-nav"
+    >
+      <span class="bars"></span>
+    </button>
+    <nav id="primary-nav" class="nav" aria-label="Primary navigation">
       {NAV.map((item) => (
         <a
           href={item.href}
@@ -20,3 +28,15 @@ const isActive = (href: string) => href !== '/' && (path === href || path.starts
     </nav>
   </div>
 </header>
+
+<script>
+  const btn = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('primary-nav');
+  if (btn && nav) {
+    btn.addEventListener('click', () => {
+      const open = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    });
+  }
+</script>

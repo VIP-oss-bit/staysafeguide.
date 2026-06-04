@@ -21,9 +21,10 @@ const fmt = (d: Date) =>
   new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
 <BaseLayout title={cluster.name} description={cluster.blurb} noindex={posts.length === 0}>
+  <div style={`--c:${cluster.accent}`}>
   <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a> › <span>{cluster.name}</span></nav>
-  <section class="hero">
-    <h1>{cluster.name}</h1>
+  <section class="hero topic-hero">
+    <h1>{cluster.icon} {cluster.name}</h1>
     <p class="lead">{cluster.blurb}</p>
   </section>
   <section class="section">
@@ -41,4 +42,5 @@ const fmt = (d: Date) =>
       </ul>
     )}
   </section>
+  </div>
 </BaseLayout>

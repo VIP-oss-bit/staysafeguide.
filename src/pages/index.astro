@@ -22,8 +22,8 @@ const fmt = (d: Date) =>
     <h2>Where do you want to start?</h2>
     <div class="grid">
       {CLUSTERS.map((c) => (
-        <a class="card" href={`/topics/${c.slug}/`}>
-          <h3>{c.name}</h3>
+        <a class="card" href={`/topics/${c.slug}/`} style={`--c:${c.accent}`}>
+          <h3><span class="card-icon">{c.icon}</span>{c.name}</h3>
           <p>{c.blurb}</p>
         </a>
       ))}
