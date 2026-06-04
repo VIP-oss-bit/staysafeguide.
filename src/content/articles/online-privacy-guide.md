@@ -3,7 +3,7 @@ title: "A simple guide to protecting your privacy online (start here)"
 description: "Online privacy without the overwhelm. The handful of areas that actually matter, what to do first, and where to go deeper, all in plain English."
 pubDate: 2026-06-04
 cluster: "VPNs & privacy"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

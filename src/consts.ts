@@ -5,7 +5,7 @@ export const SITE = {
   title: 'Stay Safe Guide — Plain-English Online Safety',
   description:
     'Clear, no-jargon guides to staying safe online: spotting scams, choosing a VPN, using a password manager, and locking down your accounts and devices.',
-  author: 'Iulian Pais',
+  author: 'Iulian',
   locale: 'en_GB',
 };
 

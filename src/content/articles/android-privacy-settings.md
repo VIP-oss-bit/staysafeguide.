@@ -3,7 +3,7 @@ title: "Android privacy settings: a soft, no-stress guide to locking things down
 description: "A gentle walk through the Android privacy settings that matter most: location, app permissions, ad tracking and your Google data, with no jargon."
 pubDate: 2026-06-04
 cluster: "VPNs & privacy"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

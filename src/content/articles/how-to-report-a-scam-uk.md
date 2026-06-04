@@ -3,7 +3,7 @@ title: "How to report a scam in the UK (and what happens next)"
 description: "Where to report a scam in the UK: your bank, Action Fraud, 7726 and more. A plain guide to who to contact for each type of scam and what each one does."
 pubDate: 2026-06-04
 cluster: "Scams & fraud"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

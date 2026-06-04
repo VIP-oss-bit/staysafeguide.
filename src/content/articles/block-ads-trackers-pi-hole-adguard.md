@@ -3,7 +3,7 @@ title: "Block ads and trackers across your whole home: Pi-hole and AdGuard Home"
 description: "How to stop ads and trackers on every device in your home, not just your browser, using free open-source tools. A plain-English guide from someone who runs it."
 pubDate: 2026-06-04
 cluster: "VPNs & privacy"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

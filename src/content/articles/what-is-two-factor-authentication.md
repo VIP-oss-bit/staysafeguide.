@@ -3,7 +3,7 @@ title: "Two-factor authentication (2FA): what it is and how to switch it on"
 description: "Two-factor authentication is the best thing after a password manager for stopping your accounts being hacked. Here's what it is, the types ranked, and how to turn it on."
 pubDate: 2026-06-04
 cluster: "Password managers"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

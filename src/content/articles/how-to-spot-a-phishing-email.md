@@ -3,7 +3,7 @@ title: "How to spot a phishing email (with the red flags that give it away)"
 description: "Phishing emails are getting harder to spot. Here are the red flags that give them away, what to do if one lands, and how to report it in the UK."
 pubDate: 2026-06-04
 cluster: "Scams & fraud"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

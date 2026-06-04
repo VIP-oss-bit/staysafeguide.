@@ -3,7 +3,7 @@ title: "How to check if a website is legit: a 7-point checklist"
 description: "Not sure if a shop or company online is real? Here are seven quick checks to tell if a website is legit before you hand over your money or your details."
 pubDate: 2026-06-04
 cluster: "Scams & fraud"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

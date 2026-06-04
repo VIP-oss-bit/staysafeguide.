@@ -3,7 +3,7 @@ title: "Are password managers safe? (and why you probably need one)"
 description: "Worried that a password manager puts all your eggs in one basket? Here's how they actually protect your passwords, the real risks, and why they beat the alternative."
 pubDate: 2026-06-04
 cluster: "Password managers"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

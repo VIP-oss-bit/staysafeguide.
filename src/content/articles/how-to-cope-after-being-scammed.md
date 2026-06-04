@@ -3,7 +3,7 @@ title: "How to cope after being scammed (you're not stupid, and you're not alone
 description: "The emotional side of being scammed is rarely talked about. Here's how to handle the anger and shame, deal with the money stress, and find support in the UK."
 pubDate: 2026-06-04
 cluster: "Scams & fraud"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

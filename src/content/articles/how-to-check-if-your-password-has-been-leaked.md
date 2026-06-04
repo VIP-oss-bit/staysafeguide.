@@ -3,7 +3,7 @@ title: "How to check if your password or email has been leaked"
 description: "Data breaches happen constantly. Here's how to check if your email or passwords have been exposed using Have I Been Pwned, and exactly what to do if they have."
 pubDate: 2026-06-04
 cluster: "Password managers"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

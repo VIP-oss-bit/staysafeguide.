@@ -3,7 +3,7 @@ title: "What to do if you've been scammed (UK): a calm step-by-step guide"
 description: "Scammed in the UK? Here's exactly what to do in the first hour, the first day and the first week to limit the damage, report it and protect yourself."
 pubDate: 2026-06-04
 cluster: "Scams & fraud"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

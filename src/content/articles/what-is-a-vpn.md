@@ -3,7 +3,7 @@ title: "What a VPN is and isn't (and when it's actually worth it)"
 description: "A plain-English guide to what a VPN really does, the myths it can't live up to, when you genuinely need one, and how to steer clear of dodgy free ones."
 pubDate: 2026-06-04
 cluster: "VPNs & privacy"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

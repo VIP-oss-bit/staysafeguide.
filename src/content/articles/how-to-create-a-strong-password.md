@@ -3,7 +3,7 @@ title: "How to create strong passwords you'll actually remember"
 description: "Forget the complicated symbols you can never recall. Here's the simple, expert-backed way to make strong passwords, and why length beats complexity."
 pubDate: 2026-06-04
 cluster: "Password managers"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

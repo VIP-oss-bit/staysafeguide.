@@ -9,7 +9,7 @@ const articles = defineCollection({
     updatedDate: z.coerce.date().optional(),
     // Must match a cluster `name` in src/consts.ts
     cluster: z.string(),
-    author: z.string().default('Iulian Pais'),
+    author: z.string().default('Iulian'),
     draft: z.boolean().default(false),
   }),
 });

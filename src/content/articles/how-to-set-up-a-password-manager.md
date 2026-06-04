@@ -3,7 +3,7 @@ title: "How to set up a password manager (a simple walkthrough)"
 description: "A calm, step-by-step guide to setting up your first password manager: choosing one, creating a master password you'll remember, and moving your logins across."
 pubDate: 2026-06-04
 cluster: "Password managers"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

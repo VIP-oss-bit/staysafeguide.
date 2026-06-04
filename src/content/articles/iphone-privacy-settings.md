@@ -3,7 +3,7 @@ title: "iPhone privacy settings: the ones worth changing (a soft guide)"
 description: "The iPhone privacy settings most people never touch but should: location, app tracking, Safari and your Apple data, explained simply and without fuss."
 pubDate: 2026-06-04
 cluster: "VPNs & privacy"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 

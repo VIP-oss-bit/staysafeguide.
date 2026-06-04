@@ -3,7 +3,7 @@ title: "Is that 'missed delivery' text a scam? Royal Mail, DPD and Evri fakes"
 description: "Got a text about a missed parcel or a small redelivery fee? Here's how to tell if it's a scam, what the fake messages look like, and what to do next."
 pubDate: 2026-06-04
 cluster: "Scams & fraud"
-author: "Iulian Pais"
+author: "Iulian"
 draft: false
 ---
 
