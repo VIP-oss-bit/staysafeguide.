@@ -23,6 +23,8 @@ const {
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
+const shareU = encodeURIComponent(canonical);
+const shareT = encodeURIComponent(title);
 const clusterMeta = CLUSTERS.find((c) => c.name === cluster);
 const fmt = (d: Date) =>
   new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
@@ -75,6 +77,14 @@ const crumbLd = {
     </div>
     <slot />
   </article>
+
+  <div class="share-row">
+    <span class="share-label">Share this guide:</span>
+    <a href={`https://wa.me/?text=${shareT}%20${shareU}`} target="_blank" rel="noopener">WhatsApp</a>
+    <a href={`https://twitter.com/intent/tweet?url=${shareU}&text=${shareT}`} target="_blank" rel="noopener">X</a>
+    <a href={`https://www.facebook.com/sharer/sharer.php?u=${shareU}`} target="_blank" rel="noopener">Facebook</a>
+    <a href={`mailto:?subject=${shareT}&body=${shareU}`}>Email</a>
+  </div>
 
   <AuthorBio />
 
