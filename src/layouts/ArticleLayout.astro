@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './BaseLayout.astro';
+import AuthorBio from '../components/AuthorBio.astro';
 import { SITE, CLUSTERS } from '../consts';
 
 interface Props {
@@ -74,6 +75,8 @@ const crumbLd = {
     </div>
     <slot />
   </article>
+
+  <AuthorBio />
 
   {related && related.length > 0 && (
     <aside class="related">

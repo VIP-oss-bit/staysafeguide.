@@ -191,6 +191,22 @@ h3 { font-size: 1.2rem; margin: 1.5em 0 0.4em; }
 .related-list a { color: var(--accent-dark); text-decoration: none; font-weight: 600; }
 .related-list a:hover { text-decoration: underline; }
 
+/* ---------- Author bio ---------- */
+.author-bio {
+  display: flex; gap: 16px; align-items: flex-start;
+  margin: 40px 0 8px; padding: 22px 24px;
+  background: var(--bg-soft); border: 1px solid var(--border); border-radius: var(--radius);
+}
+.author-avatar {
+  flex: none; width: 54px; height: 54px; border-radius: 50%;
+  background: var(--brand); color: #fff; font-weight: 800; font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+}
+.author-text p { margin: 0 0 6px; }
+.author-name { font-weight: 700; color: var(--fg); }
+.author-role { font-size: 0.9rem; color: var(--muted); font-weight: 600; }
+.author-bio .bio { font-size: 0.97rem; color: var(--fg); margin-top: 4px; }
+
 /* ---------- Footer ---------- */
 .site-footer { margin-top: 64px; border-top: 1px solid var(--border-strong); background: var(--bg-soft); }
 .site-footer .wrap { padding: 34px 20px; display: flex; gap: 24px; flex-wrap: wrap; justify-content: space-between; }
