@@ -11,6 +11,7 @@ export const SITE = {
 
 // Top navigation
 export const NAV = [
+  { label: 'Guides', href: '/guides/' },
   { label: 'Scams & Fraud', href: '/topics/scams-fraud/' },
   { label: 'VPNs & Privacy', href: '/topics/vpns-privacy/' },
   { label: 'Passwords', href: '/topics/password-managers/' },
