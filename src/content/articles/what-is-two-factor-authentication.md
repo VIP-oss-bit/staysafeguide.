@@ -19,7 +19,9 @@ This matters because most account takeovers come down to stolen, leaked or reuse
 
 - **Text-message codes (SMS).** Better than nothing, and fine if it is the only choice. The weakness is that criminals can sometimes hijack your phone number through a "SIM swap", so it is the least secure option.
 - **Authenticator apps.** An app on your phone generates a fresh six-digit code every 30 seconds. Examples include Google Authenticator, Microsoft Authenticator and Authy, and most password managers can do this too. Much stronger than SMS.
-- **Passkeys and hardware keys.** The strongest option, and resistant to phishing. Passkeys are now built into most phones, and a hardware key like a YubiKey is the gold standard for your most important accounts.
+- **Passkeys and hardware keys.** The strongest option, and resistant to phishing. Passkeys are now built into most phones, and a hardware key like a <a href="https://www.amazon.co.uk/s?k=yubikey+5+series&tag=staysafeguide-21" target="_blank" rel="sponsored nofollow noopener">YubiKey</a> is the gold standard for your most important accounts.
+
+<div class="disclosure">The YubiKey link above is an affiliate link. As an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</div>
 
 ## How to turn it on
 

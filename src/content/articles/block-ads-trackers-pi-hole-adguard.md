@@ -21,6 +21,10 @@ Pi-hole is the classic. It is free, open-source, and runs on a cheap Raspberry P
 
 I run Pi-hole alongside Unbound, which means my DNS look-ups resolve directly rather than going through a big provider, so I hand less of my browsing to anyone. That is the privacy-maximising route, and it is exactly the kind of thing this site is about.
 
+<div class="callout tip">
+<p><strong>What you need:</strong> the simplest way to get started is a <a href="https://www.amazon.co.uk/s?k=raspberry+pi+5+starter+kit&tag=staysafeguide-21" target="_blank" rel="sponsored nofollow noopener">Raspberry Pi starter kit</a>, which bundles the board, case, power supply and memory card so there is nothing else to buy. <em>That is an affiliate link: as an Amazon Associate we earn from qualifying purchases, at no extra cost to you.</em></p>
+</div>
+
 <!-- TODO (Iulian): drop in a screenshot of your own Pi-hole dashboard and a real stat, e.g. "X% of queries blocked". That first-hand proof is gold for ranking. -->
 
 ## AdGuard Home (the main alternative)
