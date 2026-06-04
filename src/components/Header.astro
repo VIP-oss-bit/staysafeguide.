@@ -1,23 +1,16 @@
 ---
-import { SITE, NAV } from '../consts';
+import { SITE, NAV, CLUSTERS } from '../consts';
 const path = Astro.url.pathname;
 const isActive = (href: string) => href !== '/' && (path === href || path.startsWith(href));
+const clusterFor = (href: string) => CLUSTERS.find((c) => `/topics/${c.slug}/` === href);
 ---
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="wrap">
     <a class="brand" href="/">
       <img src="/favicon.svg" alt="" width="30" height="30" />
       <span>{SITE.name}</span>
     </a>
-    <button
-      class="nav-toggle"
-      aria-label="Open menu"
-      aria-expanded="false"
-      aria-controls="primary-nav"
-    >
-      <span class="bars"></span>
-    </button>
-    <nav id="primary-nav" class="nav" aria-label="Primary navigation">
+    <nav class="nav" aria-label="Primary navigation">
       {NAV.map((item) => (
         <a
           href={item.href}
@@ -29,14 +22,68 @@ const isActive = (href: string) => href !== '/' && (path === href || path.starts
   </div>
 </header>
 
+<button class="fab-menu" id="fab-menu" aria-label="Open menu" aria-expanded="false" aria-controls="menu-panel">
+  <span class="bars"></span>
+</button>
+<div class="menu-overlay" id="menu-overlay"></div>
+<nav class="menu-panel" id="menu-panel" aria-label="Site menu">
+  <button class="menu-close" id="menu-close" aria-label="Close menu">&times;</button>
+  <p class="menu-title">Menu</p>
+  <ul class="menu-list">
+    <li>
+      <a href="/" class={path === '/' ? 'active' : ''}>🏠 Home</a>
+    </li>
+    {NAV.map((item) => {
+      const c = clusterFor(item.href);
+      return (
+        <li>
+          <a href={item.href} class={isActive(item.href) ? 'active' : ''}>
+            {c && <span class="dot" style={`background:${c.accent}`}></span>}
+            {c && <span class="m-icon">{c.icon}</span>}
+            {item.label}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</nav>
+
 <script>
-  const btn = document.querySelector('.nav-toggle');
-  const nav = document.getElementById('primary-nav');
-  if (btn && nav) {
-    btn.addEventListener('click', () => {
-      const open = nav.classList.toggle('open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    });
-  }
+  const header = document.getElementById('site-header');
+  const fab = document.getElementById('fab-menu');
+  const panel = document.getElementById('menu-panel');
+  const overlay = document.getElementById('menu-overlay');
+  const closeBtn = document.getElementById('menu-close');
+
+  // Auto-hide header on scroll down, reveal on scroll up; show floating burger once scrolled.
+  let last = window.scrollY;
+  const onScroll = () => {
+    const y = window.scrollY;
+    if (y <= 80) {
+      header?.classList.remove('header-hidden');
+      fab?.classList.remove('show');
+    } else {
+      fab?.classList.add('show');
+      if (y > last + 4) header?.classList.add('header-hidden');
+      else if (y < last - 4) header?.classList.remove('header-hidden');
+    }
+    last = y;
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Slide-in menu
+  const openMenu = () => {
+    panel?.classList.add('open');
+    overlay?.classList.add('open');
+    fab?.setAttribute('aria-expanded', 'true');
+  };
+  const closeMenu = () => {
+    panel?.classList.remove('open');
+    overlay?.classList.remove('open');
+    fab?.setAttribute('aria-expanded', 'false');
+  };
+  fab?.addEventListener('click', () => (panel?.classList.contains('open') ? closeMenu() : openMenu()));
+  closeBtn?.addEventListener('click', closeMenu);
+  overlay?.addEventListener('click', closeMenu);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeMenu(); });
 </script>

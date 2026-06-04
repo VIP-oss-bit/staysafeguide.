@@ -33,7 +33,7 @@ export const CLUSTERS = [
     name: 'VPNs & privacy',
     slug: 'vpns-privacy',
     icon: '🔒',
-    accent: '#0d9488',
+    accent: '#047857',
     blurb: 'Whether you actually need a VPN, and how to choose one without overpaying.',
   },
   {
