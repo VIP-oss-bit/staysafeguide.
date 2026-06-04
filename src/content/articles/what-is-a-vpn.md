@@ -36,7 +36,9 @@ This is where the marketing runs ahead of reality:
 
 ## "But isn't my connection already encrypted?"
 
-Mostly, yes. Almost every site now uses HTTPS, the little padlock, which already encrypts what you send to that particular site. So sitting at home on your own secured network, a VPN adds less than the adverts imply. Its real wins are on networks you do not control, and in hiding the overall shape of your browsing from the network and your provider.
+Partly, and this is where it gets misunderstood. Almost every site now uses HTTPS, the little padlock, and that encrypts the *contents* of what you do on a site: the pages you read, the passwords and messages you type. What it does **not** hide is *which* sites you visit. Your provider can still see the domains you connect to, because the address look-ups your device makes (DNS) and part of the secure handshake (the server name) reveal the site even over HTTPS. So your internet provider can build a list of the sites you go to, just not what you did once you were there.
+
+That is exactly where a VPN still earns its place at home: it hides those site addresses from your provider too. The trade-off is that the VPN company can now see them instead, which is why their no-logs policy matters so much. If you would rather not run a VPN all the time, switching on encrypted DNS (often labelled DNS over HTTPS in your browser or phone settings) closes part of the gap by hiding your look-ups, though the server name can still leak in other ways.
 
 ## The truth about free VPNs
 
