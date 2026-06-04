@@ -13,6 +13,13 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await entry.render();
 const { data } = entry;
+
+// Other guides in the same cluster, for the "more in this topic" block
+const all = await getCollection('articles', ({ data }) => !data.draft);
+const related = all
+  .filter((e) => e.data.cluster === data.cluster && e.slug !== entry.slug)
+  .sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf())
+  .slice(0, 5);
 ---
 <ArticleLayout
   title={data.title}
@@ -21,6 +28,7 @@ const { data } = entry;
   updatedDate={data.updatedDate}
   cluster={data.cluster}
   author={data.author}
+  related={related}
 >
   <Content />
 </ArticleLayout>

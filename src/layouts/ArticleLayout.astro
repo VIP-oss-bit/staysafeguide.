@@ -9,6 +9,7 @@ interface Props {
   updatedDate?: Date;
   cluster: string;
   author?: string;
+  related?: any[];
 }
 const {
   title,
@@ -17,6 +18,7 @@ const {
   updatedDate,
   cluster,
   author = SITE.author,
+  related = [],
 } = Astro.props;
 
 const canonical = new URL(Astro.url.pathname, Astro.site).href;
@@ -71,6 +73,21 @@ const crumbLd = {
     </div>
     <slot />
   </article>
+
+  {related && related.length > 0 && (
+    <aside class="related">
+      <h2>More in {clusterMeta ? clusterMeta.name : 'this topic'}</h2>
+      <ul class="related-list">
+        {related.map((r) => (
+          <li><a href={`/articles/${r.slug}/`}>{r.data.title}</a></li>
+        ))}
+      </ul>
+      {clusterMeta && (
+        <a class="btn-secondary" href={`/topics/${clusterMeta.slug}/`}>See all {clusterMeta.name} guides</a>
+      )}
+    </aside>
+  )}
+
   <script type="application/ld+json" set:html={JSON.stringify(articleLd)} />
   <script type="application/ld+json" set:html={JSON.stringify(crumbLd)} />
 </BaseLayout>
