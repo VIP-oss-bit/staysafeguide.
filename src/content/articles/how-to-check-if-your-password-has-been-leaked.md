@@ -23,6 +23,16 @@ You're only entering an email address, not a password, so it's safe to use. If y
 
 Have I Been Pwned also has a "Pwned Passwords" feature that tells you if a specific password has appeared in breaches. It's built so the site never actually sees your full password. Most password managers and modern browsers (like Chrome's Password Checkup and Apple's security recommendations) now do this for you in the background and flag any weak or leaked passwords automatically.
 
+## Other ways to check
+
+Have I Been Pwned is the best known, but it is not the only option:
+
+- **Mozilla Monitor** (formerly Firefox Monitor) gives a friendly breach report and also offers paid data-removal. It draws on the same underlying breach data.
+- **Your browser or password manager.** Chrome's Password Checkup, Apple's compromised-password alerts, and managers like Bitwarden and 1Password all flag leaked passwords for you automatically in the background.
+- **NextDNS and some security suites** include breach monitoring too.
+
+Use whichever suits you. Most of them lean on the same breach databases, so the main thing is simply that you check.
+
 ## What to do if you've been breached
 
 Seeing your email in a breach is common and not a disaster, but act on it:
