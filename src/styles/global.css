@@ -1,16 +1,16 @@
 :root {
   --bg: #ffffff;
-  --bg-soft: #f0f6f3;
-  --fg: #12211c;
-  --muted: #56685f;
-  --brand: #065f46;        /* deep emerald: brand + headings */
-  --accent: #047857;       /* emerald: links */
-  --accent-dark: #064e3b;
-  --accent-soft: #d8f0e6;  /* emerald tint: nav hover/active */
+  --bg-soft: #f4f6fa;
+  --fg: #15202b;
+  --muted: #56657a;
+  --brand: #1b3a5c;        /* institutional navy: brand + headings */
+  --accent: #1e4f8a;       /* navy-blue: links */
+  --accent-dark: #163a66;
+  --accent-soft: #e8eef7;  /* light navy tint: nav hover/active */
   --cta: #f97316;          /* orange: primary call-to-action buttons */
   --cta-dark: #ea670c;
-  --border: #e2ebe6;
-  --border-strong: #c6d8cf;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
   --card: #ffffff;
   --ok: #0f8a5f;
   --warn: #b54708;
@@ -64,7 +64,7 @@ h3 { font-size: 1.2rem; margin: 1.5em 0 0.4em; }
 
 .nav { display: flex; gap: 4px; flex-wrap: wrap; align-items: center; }
 .nav a {
-  color: #2d3a35; text-decoration: none; font-size: 0.97rem; font-weight: 600;
+  color: #334155; text-decoration: none; font-size: 0.97rem; font-weight: 600;
   padding: 8px 12px; border-radius: 9px; line-height: 1;
   transition: background 0.12s ease, color 0.12s ease;
 }
@@ -118,7 +118,7 @@ h3 { font-size: 1.2rem; margin: 1.5em 0 0.4em; }
 /* ---------- Hero ---------- */
 .hero {
   margin: 28px 0 8px; padding: 40px 32px;
-  background: linear-gradient(180deg, #e3f3ec 0%, #f3faf6 100%);
+  background: linear-gradient(180deg, #e8eef7 0%, #f5f8fc 100%);
   border: 1px solid var(--border); border-radius: var(--radius);
 }
 .hero p.lead { font-size: 1.22rem; color: var(--muted); max-width: 60ch; margin: 0; }
