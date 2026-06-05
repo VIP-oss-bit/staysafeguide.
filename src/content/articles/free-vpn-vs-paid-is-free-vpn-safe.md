@@ -31,4 +31,18 @@ If you use a VPN regularly, want fast speeds for streaming, need lots of server 
 <p><strong>Rule of thumb:</strong> avoid unknown free VPNs from the app store with millions of installs and vague ownership. If you want free, stick to a name with a real reputation to protect.</p>
 </div>
 
+## What I use
+
+I'll be straight about my own setup: I use Surfshark, and it has been an easy one to live with. It is quick enough for everyday browsing and handles streaming without fuss, the choice of server locations is huge, and I have honestly never had a problem with it. The feature I did not expect to rely on as much as I do is its **Alternative ID**, which creates an alias email you can give to websites instead of your real address. I have used it on a few sign-ups and it worked well. It is the paid VPN I would point a friend to.
+
+<figure>
+  <img src="/surfshark-app.png" alt="The Surfshark app connected to a UK VPN server, showing recently used locations and the Alternative ID feature" loading="lazy" />
+  <figcaption>Surfshark on my phone, connected to a UK server. The Alternative ID section lower down generates alias emails to use instead of your real one.</figcaption>
+</figure>
+
+<figure>
+  <img src="/surfshark-locations.png" alt="Surfshark's location picker showing a long list of countries and server types" loading="lazy" />
+  <figcaption>The location list is long, with virtual and static-IP options. I have never struggled to find a server that works.</figcaption>
+</figure>
+
 Not sure you even need one? Start with [what a VPN is and isn't](/articles/what-is-a-vpn/), which explains exactly what a VPN does and does not do. More in our [VPNs and privacy section](/topics/vpns-privacy/).
