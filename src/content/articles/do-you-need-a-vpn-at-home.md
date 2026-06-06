@@ -13,14 +13,18 @@ VPN adverts are everywhere — on podcasts, YouTube, the lot — and they often 
 
 A VPN routes your internet traffic through an encrypted tunnel to one of its servers, hiding your activity from your internet provider and masking your location. If you're fuzzy on the details, start with [what a VPN is and isn't](/articles/what-is-a-vpn/) — it clears up the common myths.
 
-## When you probably don't need one at home
+## What HTTPS already does — and what it doesn't
 
-If you're browsing, banking and shopping on your own home broadband, you're already fairly well protected. Your traffic to almost every site is encrypted by HTTPS (the padlock), your bank adds its own security, and no stranger is lurking on your home network. A VPN adds little to that everyday picture.
+There's a common myth that a VPN is pointless at home because "everything's encrypted anyway." It's worth being precise. The padlock (HTTPS) encrypts the *contents* of what you do on a site — your passwords, messages and card details can't be read by anyone in between. What it does **not** hide is *which* sites you visit: your internet provider can still see every website you connect to, because the address look-ups your device makes (DNS) and part of the secure handshake give the domain away. So "I've got HTTPS" is not the same as "my browsing is private from my ISP."
+
+## When you might not need one at home
+
+If your only worry is someone stealing your banking details on your own broadband, that's already well covered — HTTPS protects what you type, your bank adds its own checks, and no stranger is lurking on your home network. If that's genuinely all you care about, a VPN adds little. But if you'd rather your provider *not* keep a list of every site you visit, that's a real reason to use one even at home — more on that next.
 
 ## When a VPN genuinely earns its money
 
 - **Privacy from your internet provider.** Your ISP can see the sites you connect to and may use that data. A VPN hides it from them.
-- **Public and untrusted networks.** Hotels, airports, cafés — see [is public Wi-Fi safe](/articles/is-public-wifi-safe/).
+- **Public and untrusted networks.** On wifi you don't control, a VPN stops others on the network snooping and shuts down **man-in-the-middle attacks** — where someone secretly sits between you and the sites you use to eavesdrop or tamper. See [is public Wi-Fi safe](/articles/is-public-wifi-safe/).
 - **Travel and streaming.** Getting your home country's content while abroad, or a service that isn't available locally.
 - **Avoiding throttling or censorship**, or keeping file-sharing private.
 

@@ -20,7 +20,7 @@ Almost everything a VPN does comes back to those two things.
 
 ## What a VPN is genuinely good for
 
-- **Public wifi.** On networks you do not control, like cafés, airports and hotels, a VPN stops anyone else on that network snooping on your connection. This is the strongest everyday reason to use one.
+- **Public wifi.** On networks you do not control, like cafés, airports and hotels, a VPN stops anyone else on that network snooping on your connection, or sitting between you and the sites you use to eavesdrop or tamper — a man-in-the-middle attack. This is the strongest everyday reason to use one.
 - **Keeping your browsing private from your provider.** Your broadband or mobile provider can otherwise see and log the sites you go to. A VPN hides that from them.
 - **Appearing to be in another country.** Handy for reaching your home streaming service while you travel. Worth knowing this often breaks the service's terms, and they actively try to block it.
 - **Hiding your real location and IP address from websites.**

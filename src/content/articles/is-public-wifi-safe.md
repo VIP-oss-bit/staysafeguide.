@@ -22,7 +22,7 @@ The big change is that almost the entire web now uses **HTTPS** — the little p
 
 ## When a VPN genuinely helps
 
-A VPN encrypts *everything* between you and its server, which adds a layer of privacy from the network owner and shields you on networks you don't trust. It's a reasonable thing to switch on at an airport or hotel. Just know what it is first — see [what a VPN is and isn't](/articles/what-is-a-vpn/) and [free VPN vs paid](/articles/free-vpn-vs-paid-is-free-vpn-safe/) — and don't buy one purely out of fear of coffee-shop wifi.
+A VPN encrypts *everything* between you and its server, which adds a layer of privacy from the network owner and shields you on networks you don't trust. It also blocks **man-in-the-middle attacks** — where someone on the same network secretly slips between you and the websites you're using to eavesdrop or meddle, the classic public-wifi trick. It's a reasonable thing to switch on at an airport or hotel. Just know what it is first — see [what a VPN is and isn't](/articles/what-is-a-vpn/) and [free VPN vs paid](/articles/free-vpn-vs-paid-is-free-vpn-safe/) — and don't buy one purely out of fear of coffee-shop wifi.
 
 <div class="callout tip">
 <p><strong>The safest "public wifi" is often your own phone.</strong> Tethering to your mobile data, or using it directly, avoids untrusted networks entirely — handy for a quick bank check on the move.</p>
