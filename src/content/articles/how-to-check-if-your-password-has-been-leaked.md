@@ -9,6 +9,10 @@ draft: false
 
 Companies get hacked all the time, and when they do, their users' email addresses and passwords often end up dumped online. Criminals then take those leaked details and try them on other sites, banking on the fact that most people reuse passwords. This trick is called credential stuffing, and it's why a leak at one company can put all your accounts at risk. The good news: you can check whether you've been caught up in a known breach in about a minute.
 
+<div class="callout tip">
+<p><strong>Replacing a leaked password?</strong> Test the new one with our <a href="/tools/password-strength-checker/">password strength checker</a> before you save it — it shows how long it would take to crack, right in your browser.</p>
+</div>
+
 ## Check your email with Have I Been Pwned
 
 The best-known tool is **Have I Been Pwned** (haveibeenpwned.com). It's free, it's run by a respected security researcher, and it's trusted enough that browsers and even some governments use its data.

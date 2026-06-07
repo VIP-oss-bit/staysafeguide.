@@ -9,6 +9,10 @@ draft: false
 
 Most of us were taught to make passwords like `P@ssw0rd!2` — a mix of capitals, numbers and symbols. The problem is that those are hard for humans to remember and surprisingly easy for computers to crack. There's a better way.
 
+<div class="callout tip">
+<p><strong>Try it now:</strong> our <a href="/tools/password-strength-checker/">password strength checker</a> shows how long any password would take to crack — and it runs entirely in your browser, so nothing you type is sent anywhere.</p>
+</div>
+
 ## What actually makes a password strong
 
 Two things matter far more than fancy symbols:

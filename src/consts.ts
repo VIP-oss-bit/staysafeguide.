@@ -16,6 +16,7 @@ export const NAV = [
   { label: 'VPNs & Privacy', href: '/topics/vpns-privacy/' },
   { label: 'Passwords', href: '/topics/password-managers/' },
   { label: 'Devices & Accounts', href: '/topics/device-account-security/' },
+  { label: 'Tools', href: '/tools/' },
   { label: 'About', href: '/about/' },
 ];
 

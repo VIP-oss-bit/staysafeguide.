@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const title = 'Free online safety tools';
+const description =
+  'Free, private tools to help you stay safe online — starting with a password strength checker that runs entirely in your browser.';
+---
+
+<BaseLayout title={title} description={description}>
+  <section class="hero">
+    <h1>Free safety tools</h1>
+    <p class="lead">Simple, private tools that do the work for you. They run in your browser — nothing you type is sent or stored.</p>
+  </section>
+
+  <div class="grid">
+    <a class="card" href="/tools/password-strength-checker/" style="--c:#7c3aed">
+      <h3><span class="card-icon">🔑</span> Password strength checker</h3>
+      <p>See how long your password would take to crack — and what's making it weak. 100% in your browser.</p>
+    </a>
+  </div>
+
+  <p class="muted" style="margin-top:18px">More tools are on the way. Got an idea for one you'd use? <a href="/contact/">Tell us</a>.</p>
+</BaseLayout>

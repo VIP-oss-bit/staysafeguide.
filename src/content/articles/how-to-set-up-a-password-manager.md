@@ -9,6 +9,10 @@ draft: false
 
 Setting up a password manager is the single highest-value hour you can spend on your online safety. Here's how to do it without getting overwhelmed. You don't have to fix every account in one go.
 
+<div class="callout tip">
+<p><strong>See the problem first:</strong> run your current password through our <a href="/tools/password-strength-checker/">password strength checker</a> — if it cracks in seconds, you'll see exactly why a manager is worth the hour. It runs entirely in your browser.</p>
+</div>
+
 ## Step 1: Pick one
 
 Any reputable manager is a big step up from reusing passwords. Good starting points:

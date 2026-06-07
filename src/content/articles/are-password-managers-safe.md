@@ -9,6 +9,10 @@ draft: false
 
 It's a fair worry: why would you put every password in one place? Doesn't that just hand a thief the keys to everything? It's the most common reason people avoid password managers, so let's deal with it honestly.
 
+<div class="callout tip">
+<p><strong>Curious how yours holds up?</strong> Our <a href="/tools/password-strength-checker/">password strength checker</a> shows how long your password would survive an attack — privately, in your browser.</p>
+</div>
+
 ## How a password manager actually protects you
 
 A good password manager uses what's called zero-knowledge encryption. In plain terms:
