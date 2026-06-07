@@ -27,6 +27,10 @@ You're only entering an email address, not a password, so it's safe to use. If y
 
 Have I Been Pwned also has a "Pwned Passwords" feature that tells you if a specific password has appeared in breaches. It's built so the site never actually sees your full password. Most password managers and modern browsers (like Chrome's Password Checkup and Apple's security recommendations) now do this for you in the background and flag any weak or leaked passwords automatically.
 
+<div class="callout tip">
+<p><strong>Check a password right now:</strong> our <a href="/tools/has-my-password-been-breached/">free breach checker</a> uses that same Pwned Passwords data — privately, in your browser. Only a partial fingerprint is ever sent, never your password, and it shows exactly how many times a password has turned up in breaches.</p>
+</div>
+
 ## Other ways to check
 
 Have I Been Pwned is the best known, but it is not the only option:
